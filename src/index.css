@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+@font-face {
+  font-family: "Cosi Azure";
+  src: url(./assets/fonts/CosiAzure-Bold.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-dark: #050505;
+  --color-light: #f7f7f7;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: "Michroma", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  background-color: var(--color-light);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 0%;
+  transition: 0.5s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  font-family: "Cosi Azure", sans-serif;
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+.hero::before {
+  content: "Designer";
+  top: 0;
+  left: 0;
+}
+
+.hero::after {
+  content: "Developer";
+  bottom: 0;
+  right: 0;
+}
+
+.hero-image {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.circle-left,
+.circle-right {
+  height: 1000px;
+  width: 1000px;
+  border: 1px solid var(--color-light);
+  border-radius: 50%;
+  opacity: 0.2;
+  position: fixed;
+  z-index: -1000;
+}
+
+.circle-left {
+  top: -40%;
+  left: -20%;
+}
+
+.circle-right {
+  bottom: -40%;
+  right: -20%;
+}
+
+.section-title {
+  font-family: "Cosi Azure", sans-serif;
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+.project-right {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
 }
