@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="contact container mx-auto mt-20">
+    <div className="contact container mx-auto mt-20" id="contact">
       <h2 className="section-title">Get in touch</h2>
       <form className="mt-20 grid grid-cols-2 gap-10">
         <input

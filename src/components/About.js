@@ -18,7 +18,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about container mx-auto mt-20">
+    <div className="about container mx-auto mt-20" id="about">
       <h2 className="section-title">About Me</h2>
       <div className="about-wrapper mt-20 grid grid-cols-2 gap-20">
         <div className="about-left" ref={aboutLeftRef}></div>
@@ -33,7 +33,7 @@ const About = () => {
             new problem to solve.
           </p>
           <a
-            href="#"
+            href="https://docs.google.com/document/d/1uYTvxmeNsx7CpkKPszWqjAMfJgt2bs6HSyzBVK06mZU/edit?usp=sharing"
             target="_blank"
             className="mt-10 inline-block py-10 px-20 border uppercase rounded-full border-white/20 hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >

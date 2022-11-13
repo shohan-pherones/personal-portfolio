@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div className="skills container mx-auto mt-20">
+    <div className="skills container mx-auto mt-20" id="skills">
       <h2 className="section-title">My Skills</h2>
       <div className="skills-wrapper grid grid-cols-2 gap-20 mt-20">
         <ul className="skills-wrapper-1 flex flex-col gap-10">

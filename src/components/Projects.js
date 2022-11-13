@@ -44,7 +44,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects container mx-auto mt-20">
+    <div className="projects container mx-auto mt-20" id="projects">
       <h2 className="section-title">My Projects</h2>
       <div className="projects-wrapper mt-20 flex flex-col gap-40">
         <div className="project grid grid-cols-5 gap-20">
