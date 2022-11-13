@@ -44,7 +44,6 @@ body {
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +54,10 @@ body {
   line-height: 1.6;
   letter-spacing: 2px;
   word-spacing: 3px;
+}
+
+.app {
+  position: relative;
 }
 
 .noise {

@@ -8,7 +8,7 @@ import Blogs from "./components/Blogs";
 
 const App = () => {
   return (
-    <div className="app parallax-parent">
+    <div className="app">
       <div className="noise"></div>
       <Navbar />
       <Socials />
