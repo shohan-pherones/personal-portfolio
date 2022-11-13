@@ -71,7 +71,7 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: -1500;
-  opacity: 0.05;
+  opacity: 0.07;
 }
 
 .link {
@@ -129,7 +129,7 @@ body {
   width: 1000px;
   border: 1px dashed var(--color-light);
   border-radius: 50%;
-  opacity: 0.2;
+  opacity: 0.3;
   position: fixed;
   z-index: -1000;
   animation: spin 90s linear infinite;
@@ -212,4 +212,45 @@ textarea,
 button {
   letter-spacing: 2px;
   word-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero::before,
+  .hero::after {
+    font-size: 8rem;
+  }
+
+  .section-title {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero::before,
+  .hero::after {
+    font-size: 6rem;
+  }
+
+  .section-title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+
+  .hero::before,
+  .hero::after {
+    font-size: 5rem;
+  }
+
+  .section-title {
+    font-size: 5rem;
+  }
 }

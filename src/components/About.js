@@ -18,9 +18,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about container mx-auto mt-20" id="about">
+    <div className="about container mx-auto mt-40" id="about">
       <h2 className="section-title">About Me</h2>
-      <div className="about-wrapper mt-20 grid grid-cols-2 gap-20">
+      <div className="about-wrapper mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right">
           <p>

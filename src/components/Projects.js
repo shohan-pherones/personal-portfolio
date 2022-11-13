@@ -44,11 +44,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects container mx-auto mt-20" id="projects">
+    <div className="projects container mx-auto mt-40" id="projects">
       <h2 className="section-title">My Projects</h2>
-      <div className="projects-wrapper mt-20 flex flex-col gap-40">
-        <div className="project grid grid-cols-5 gap-20">
-          <div className="project-left col-span-3 flex flex-col gap-10">
+      <div className="projects-wrapper mt-40 flex flex-col gap-40">
+        <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20">
+          <div className="project-left xl:col-span-3 flex flex-col gap-10">
             <span className="text-9xl text-white/20">01</span>
             <h3 className="uppercase text-5xl leading-relaxed text-cyan-400">
               React Shopping: An online electronics accessories store
@@ -85,12 +85,12 @@ const Projects = () => {
             </div>
           </div>
           <div
-            className="project-right col-span-2 justify-self-end"
+            className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
             ref={projectRightRefOne}
           ></div>
         </div>
-        <div className="project grid grid-cols-5 gap-20">
-          <div className="project-left col-span-3 flex flex-col gap-10">
+        <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20">
+          <div className="project-left xl:col-span-3 flex flex-col gap-10">
             <span className="text-9xl text-white/20">02</span>
             <h3 className="uppercase text-5xl leading-relaxed text-cyan-400">
               React Todo App: A simple todo application
@@ -128,12 +128,12 @@ const Projects = () => {
             </div>
           </div>
           <div
-            className="project-right col-span-2 justify-self-end"
+            className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
             ref={projectRightRefTwo}
           ></div>
         </div>
-        <div className="project grid grid-cols-5 gap-20">
-          <div className="project-left col-span-3 flex flex-col gap-10">
+        <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20">
+          <div className="project-left xl:col-span-3 flex flex-col gap-10">
             <span className="text-9xl text-white/20">03</span>
             <h3 className="uppercase text-5xl leading-relaxed text-cyan-400">
               Foodverse: A Recipe Finder Web Application
@@ -174,7 +174,7 @@ const Projects = () => {
             </div>
           </div>
           <div
-            className="project-right col-span-2 justify-self-end"
+            className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
             ref={projectRightRefThree}
           ></div>
         </div>

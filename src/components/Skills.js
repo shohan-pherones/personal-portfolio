@@ -1,8 +1,8 @@
 const Skills = () => {
   return (
-    <div className="skills container mx-auto mt-20" id="skills">
+    <div className="skills container mx-auto mt-40" id="skills">
       <h2 className="section-title">My Skills</h2>
-      <div className="skills-wrapper grid grid-cols-2 gap-20 mt-20">
+      <div className="skills-wrapper grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20 mt-40">
         <ul className="skills-wrapper-1 flex flex-col gap-10">
           <li className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">01.</span>

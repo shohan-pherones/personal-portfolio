@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div className="contact container mx-auto mt-20" id="contact">
+    <div className="contact container mx-auto mt-40" id="contact">
       <h2 className="section-title">Get in touch</h2>
-      <form className="mt-20 grid grid-cols-2 gap-10">
+      <form className="mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <input
           type="text"
           placeholder="Your name"
