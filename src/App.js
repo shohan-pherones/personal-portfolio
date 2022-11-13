@@ -1,28 +1,20 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import Socials from "./components/Socials";
-import Bio from "./components/Bio";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const thankyouText = "Thanks for visiting my portfolio";
-
   return (
     <div className="app">
       <div className="noise"></div>
       <Navbar />
-      <Hero />
       <Socials />
-      <Bio />
-      <Projects />
-      <Skills />
-      <About />
-      <Contact />
-      <Navbar text={thankyouText} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   );
