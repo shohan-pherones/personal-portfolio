@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Bio from "./components/Bio";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -12,6 +13,7 @@ const App = () => {
       <Bio />
       <Projects />
       <Skills />
+      <About />
     </div>
   );
 };

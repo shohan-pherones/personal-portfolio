@@ -135,7 +135,7 @@ body {
 }
 
 .skill-item::after {
-  background-color: #06b6d4;
+  background-color: #22d3ee;
   width: 0%;
   transition: 0.5s;
 }
@@ -150,4 +150,10 @@ body {
 
 .skill-name {
   font-size: 2rem;
+}
+
+.about-left {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
 }
