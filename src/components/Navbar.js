@@ -23,9 +23,9 @@ const Navbar = ({ text }) => {
           </a>
         </li>
         <li>
-          <a href="#" className="link">
+          <Link to="blogs" className="link">
             Read Blogs
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#about" className="link">

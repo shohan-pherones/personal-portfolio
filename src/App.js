@@ -4,6 +4,7 @@ import Socials from "./components/Socials";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
+import Blogs from "./components/Blogs";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Socials />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="blogs" element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
