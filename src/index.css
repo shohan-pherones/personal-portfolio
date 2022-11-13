@@ -57,10 +57,6 @@ body {
   word-spacing: 3px;
 }
 
-.app {
-  position: relative;
-}
-
 .noise {
   background-image: url("./assets/images/noise.gif");
   position: fixed;
