@@ -1,8 +1,8 @@
-const Navbar = () => {
+const Navbar = ({ text }) => {
   return (
     <nav className="flex justify-between container mx-auto mt-20 uppercase">
       <div className="logo">
-        <h2>Md. Shohanur Rahman</h2>
+        <h2>{text ? text : "Md. Shohanur Rahman"}</h2>
       </div>
       <ul className="links flex flex-col gap-3">
         <li>
