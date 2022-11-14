@@ -25,7 +25,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about container mx-auto mt-40" id="about">
+    <div className="about container mx-auto mt-40">
       <h2 className="section-title" ref={aboutMeRef}>
         About Me
       </h2>

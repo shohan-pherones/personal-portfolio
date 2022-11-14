@@ -35,7 +35,7 @@ const Skills = () => {
   useGsapStagger(skillArr);
 
   return (
-    <div className="skills container mx-auto mt-40" id="skills">
+    <div className="skills container mx-auto mt-40">
       <h2 className="section-title" ref={mySkillsRef}>
         My Skills
       </h2>

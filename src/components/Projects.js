@@ -108,7 +108,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects container mx-auto mt-40" id="projects">
+    <div className="projects container mx-auto mt-40">
       <h2 className="section-title" ref={myProjects}>
         My Projects
       </h2>

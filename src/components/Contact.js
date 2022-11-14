@@ -14,7 +14,7 @@ const Contact = () => {
   useGsapStagger(formItemArr);
 
   return (
-    <div className="contact container mx-auto mt-40" id="contact">
+    <div className="contact container mx-auto mt-40">
       <h2 className="section-title" ref={getInTouchRef}>
         Get in touch
       </h2>

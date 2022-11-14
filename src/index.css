@@ -37,6 +37,12 @@
   color: var(--color-dark);
 }
 
+*,
+*::before,
+*::after {
+  cursor: none;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -54,6 +60,35 @@ body {
   line-height: 1.6;
   letter-spacing: 2px;
   word-spacing: 3px;
+}
+
+/* Custom cursor */
+.inner--cursor {
+  position: fixed;
+  left: 10px;
+  z-index: 9000;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-light);
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+}
+
+.outer--cursor {
+  position: fixed;
+  left: 10px;
+  z-index: 1000;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-light);
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 0.1s;
 }
 
 .app {
@@ -96,22 +131,21 @@ body {
   position: relative;
 }
 
-.hero::before,
-.hero::after {
+.hero-headline-1,
+.hero-headline-2 {
   position: absolute;
+  z-index: 10;
   font-family: "Cosi Azure", sans-serif;
   font-size: 10rem;
   text-transform: uppercase;
 }
 
-.hero::before {
-  content: "Designer";
+.hero-headline-1 {
   top: 0;
   left: 0;
 }
 
-.hero::after {
-  content: "Developer";
+.hero-headline-2 {
   bottom: 0;
   right: 0;
 }
