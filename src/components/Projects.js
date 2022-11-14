@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import hoverEffect from "hover-effect";
+import { useGsapHeadline, useGsapRightIn } from "../lib/gsap";
 import cloud from "../assets/images/cloud.png";
 import reactShopping1 from "../assets/images/react-shopping-1.jpg";
 import reactShopping2 from "../assets/images/react-shopping-2.jpg";
@@ -9,9 +10,15 @@ import foodVerse1 from "../assets/images/foodverse-1.jpg";
 import foodVerse2 from "../assets/images/foodverse-2.jpg";
 
 const Projects = () => {
-  const projectRightRefOne = useRef();
-  const projectRightRefTwo = useRef();
-  const projectRightRefThree = useRef();
+  const projectRightRefOne = useRef(null);
+  const projectRightRefTwo = useRef(null);
+  const projectRightRefThree = useRef(null);
+  const myProjects = useRef(null);
+
+  useGsapHeadline(myProjects);
+  useGsapRightIn(projectRightRefOne);
+  useGsapRightIn(projectRightRefTwo);
+  useGsapRightIn(projectRightRefThree);
 
   useEffect(() => {
     new hoverEffect({
@@ -45,7 +52,9 @@ const Projects = () => {
 
   return (
     <div className="projects container mx-auto mt-40" id="projects">
-      <h2 className="section-title">My Projects</h2>
+      <h2 className="section-title" ref={myProjects}>
+        My Projects
+      </h2>
       <div className="projects-wrapper mt-40 flex flex-col gap-40">
         <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20">
           <div className="project-left xl:col-span-3 flex flex-col gap-10">
