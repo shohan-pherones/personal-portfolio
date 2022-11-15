@@ -80,7 +80,7 @@ body {
 .outer--cursor {
   position: fixed;
   left: 10px;
-  z-index: 1000;
+  z-index: 9000;
   width: 25px;
   height: 25px;
   transform: translate(-50%, -50%);
