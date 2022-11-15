@@ -12,11 +12,13 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Successful from "./components/Successful";
+import Failed from "./components/Failed";
 
 const App = () => {
   // Smooth scrolling
   const lenis = new Lenis({
-    duration: 1.5,
+    duration: 1.3,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     direction: "vertical",
     smooth: true,
@@ -62,6 +64,8 @@ const App = () => {
         <Route path="blogs" element={<Blogs />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="successful" element={<Successful />} />
+        <Route path="failed" element={<Failed />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

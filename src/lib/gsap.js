@@ -17,7 +17,7 @@ export const useGsapHeadline = (ref) => {
         ease: "sine",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
@@ -37,7 +37,7 @@ export const useGsapLeftIn = (ref) => {
         ease: "sine",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
@@ -57,7 +57,7 @@ export const useGsapRightIn = (ref) => {
         ease: "sine",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
@@ -78,7 +78,7 @@ export const useGsapDropping = (ref) => {
         ease: "sine",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
@@ -99,7 +99,7 @@ export const useGsapUpward = (ref) => {
         ease: "sine",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
@@ -121,7 +121,7 @@ export const useGsapSidewalkRight = (ref) => {
         ease: "back",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
@@ -143,14 +143,14 @@ export const useGsapSidewalkLeft = (ref) => {
         ease: "back",
         scrollTrigger: {
           trigger: el,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play",
         },
       }
     );
   }, []);
 };
 
-export const useGsapStagger = (curEl, isTriggered = true) => {
+export const useGsapStagger = (curEl) => {
   useEffect(() => {
     const el = curEl.map((el) => el.current);
 
@@ -168,7 +168,7 @@ export const useGsapStagger = (curEl, isTriggered = true) => {
         stagger: 0.3,
         scrollTrigger: {
           trigger: [...el],
-          toggleActions: isTriggered ? "play reverse play reverse" : "play",
+          toggleActions: "play",
         },
       }
     );

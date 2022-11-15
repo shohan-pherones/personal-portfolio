@@ -10,7 +10,7 @@ const Socials = () => {
 
   const socialArr = [social1, social2, social3, social4, social5];
 
-  useGsapStagger(socialArr, false);
+  useGsapStagger(socialArr);
 
   return (
     <div className="socials flex gap-5 uppercase text-sm fixed left-10 top-[75%] origin-left -rotate-90 text-white/30 bg-black/30 p-5 backdrop-blur-xl z-50">
