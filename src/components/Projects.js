@@ -122,7 +122,7 @@ const Projects = () => {
               ref={p1TitleRef}
               className="uppercase text-5xl leading-relaxed text-cyan-400"
             >
-              React Shopping: An online electronics accessories store
+              React Shopping: An Online Electronics Accessories Store
             </h3>
             <p ref={p1ParaFirstRef} className="text-white/75">
               React shopping is a one-stop store for all your favorite
@@ -136,7 +136,7 @@ const Projects = () => {
               & gaming accessories, and more.
             </p>
             <span ref={p1ToolsRef} className="text-cyan-400">
-              Tools: React.js, Redux.js, Redux Toolkit, RTK Query
+              Tools: React.js, Redux.js, Redux Toolkit, RTK Query, Tailwind CSS
             </span>
             <div className="flex gap-20">
               <a
@@ -171,7 +171,7 @@ const Projects = () => {
               ref={p2TitleRef}
               className="uppercase text-5xl leading-relaxed text-cyan-400"
             >
-              React Todo App: A simple todo application
+              React Todo App: A Simple Todo Application
             </h3>
             <p ref={p2ParaFirstRef} className="text-white/75">
               This is a todo application built with React.js and backend API
@@ -186,7 +186,7 @@ const Projects = () => {
               can manage your tasks.
             </p>
             <span ref={p2ToolsRef} className="text-cyan-400">
-              Tools: React.js, Tailwind CSS, JSON Server
+              Tools: React.js, Tailwind CSS
             </span>
             <div className="flex gap-20">
               <a

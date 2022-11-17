@@ -1,4 +1,4 @@
-## Personal portfolio website using React.js, Three.js and GSAP
+## Personal Portfolio Website using React.js, Three.js and GSAP
 
 ### How to use this repo?
 
