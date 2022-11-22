@@ -15,6 +15,8 @@ const Skills = () => {
   const skill10 = useRef(null);
   const skill11 = useRef(null);
   const skill12 = useRef(null);
+  const skill13 = useRef(null);
+  const skill14 = useRef(null);
 
   const skillArr = [
     skill1,
@@ -29,6 +31,8 @@ const Skills = () => {
     skill10,
     skill11,
     skill12,
+    skill13,
+    skill14,
   ];
 
   useGsapHeadline(mySkillsRef);
@@ -63,33 +67,41 @@ const Skills = () => {
           </li>
           <li ref={skill6} className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">06.</span>
+            <span className="skill-name">Axios</span>
+          </li>
+          <li ref={skill7} className="skill-item flex gap-10 items-baseline">
+            <span className="skill-number text-white/50">07.</span>
             <span className="skill-name">React.js</span>
           </li>
         </ul>
         <ul className="skills-wrapper-2 flex flex-col gap-10">
-          <li ref={skill7} className="skill-item flex gap-10 items-baseline">
-            <span className="skill-number text-white/50">07.</span>
-            <span className="skill-name">React Router</span>
-          </li>
           <li ref={skill8} className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">08.</span>
-            <span className="skill-name">Redux.js</span>
+            <span className="skill-name">React Router</span>
           </li>
           <li ref={skill9} className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">09.</span>
-            <span className="skill-name">Redux Toolkit</span>
+            <span className="skill-name">Redux.js</span>
           </li>
           <li ref={skill10} className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">10.</span>
-            <span className="skill-name">Firebase</span>
+            <span className="skill-name">Redux Toolkit</span>
           </li>
           <li ref={skill11} className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">11.</span>
-            <span className="skill-name">TypeScript</span>
+            <span className="skill-name">Firebase</span>
           </li>
           <li ref={skill12} className="skill-item flex gap-10 items-baseline">
             <span className="skill-number text-white/50">12.</span>
+            <span className="skill-name">TypeScript</span>
+          </li>
+          <li ref={skill13} className="skill-item flex gap-10 items-baseline">
+            <span className="skill-number text-white/50">13.</span>
             <span className="skill-name">GSAP</span>
+          </li>
+          <li ref={skill14} className="skill-item flex gap-10 items-baseline">
+            <span className="skill-number text-white/50">14.</span>
+            <span className="skill-name">Three.js</span>
           </li>
         </ul>
       </div>

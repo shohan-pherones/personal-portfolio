@@ -39,7 +39,8 @@ const About = () => {
           </p>
           <p className="mt-10">
             What I love about being a web developer is that every day there is a
-            new problem to solve.
+            new problem to solve, and my happiness is to solve these problems
+            with joy.
           </p>
           <a
             href="https://docs.google.com/document/d/1uYTvxmeNsx7CpkKPszWqjAMfJgt2bs6HSyzBVK06mZU/edit?usp=sharing"

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c5c4d1a5.css",
-    "main.js": "/static/js/main.00a05772.js",
+    "main.js": "/static/js/main.f47f41bc.js",
     "static/media/noise.gif": "/static/media/noise.2290dc385105e3fd9a35.gif",
     "static/media/hero-image-1.jpg": "/static/media/hero-image-1.c8ba4d1e139e3c477a0b.jpg",
     "static/media/foodverse-2.jpg": "/static/media/foodverse-2.6bcf5c05432e77f8bf80.jpg",
@@ -17,10 +17,10 @@
     "static/media/CosiAzure-Bold.ttf": "/static/media/CosiAzure-Bold.075a131a6977ad2fce57.ttf",
     "index.html": "/index.html",
     "main.c5c4d1a5.css.map": "/static/css/main.c5c4d1a5.css.map",
-    "main.00a05772.js.map": "/static/js/main.00a05772.js.map"
+    "main.f47f41bc.js.map": "/static/js/main.f47f41bc.js.map"
   },
   "entrypoints": [
     "static/css/main.c5c4d1a5.css",
-    "static/js/main.00a05772.js"
+    "static/js/main.f47f41bc.js"
   ]
 }

@@ -5,15 +5,15 @@ import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import Socials from "./components/Socials";
 import Home from "./components/Home";
-import NotFound from "./components/NotFound";
-import Footer from "./components/Footer";
-import Blogs from "./components/Blogs";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Blogs from "./components/Blogs";
 import Successful from "./components/Successful";
 import Failed from "./components/Failed";
+import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
 
 const App = () => {
   // Smooth scrolling
