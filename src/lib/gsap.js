@@ -21,7 +21,7 @@ export const useGsapHeadline = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapLeftIn = (ref) => {
@@ -41,7 +41,7 @@ export const useGsapLeftIn = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapRightIn = (ref) => {
@@ -61,7 +61,7 @@ export const useGsapRightIn = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapDropping = (ref) => {
@@ -82,7 +82,7 @@ export const useGsapDropping = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapUpward = (ref) => {
@@ -103,7 +103,7 @@ export const useGsapUpward = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapSidewalkRight = (ref) => {
@@ -125,7 +125,7 @@ export const useGsapSidewalkRight = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapSidewalkLeft = (ref) => {
@@ -147,7 +147,7 @@ export const useGsapSidewalkLeft = (ref) => {
         },
       }
     );
-  }, []);
+  }, [ref]);
 };
 
 export const useGsapStagger = (curEl) => {
@@ -172,5 +172,5 @@ export const useGsapStagger = (curEl) => {
         },
       }
     );
-  }, []);
+  }, [curEl]);
 };

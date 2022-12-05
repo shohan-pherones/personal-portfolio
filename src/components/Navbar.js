@@ -53,6 +53,7 @@ const Navbar = ({ text }) => {
           <a
             href="https://docs.google.com/document/d/1uYTvxmeNsx7CpkKPszWqjAMfJgt2bs6HSyzBVK06mZU/edit?usp=sharing"
             target="_blank"
+            rel="noreferrer"
             className="link"
           >
             My Resume

@@ -143,6 +143,7 @@ const Projects = () => {
                 ref={p1ButtonFirstRef}
                 href="https://github.com/shohan-pherones/react-shopping-client"
                 target="_blank"
+                rel="noreferrer"
                 className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
               >
                 View in GitHub
@@ -151,6 +152,7 @@ const Projects = () => {
                 ref={p1ButtonSecondRef}
                 href="https://react-shopping-shohan.netlify.app"
                 target="_blank"
+                rel="noreferrer"
                 className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
               >
                 View Live Demo
@@ -193,6 +195,7 @@ const Projects = () => {
                 ref={p2ButtonFirstRef}
                 href="https://github.com/shohan-pherones/react-todo-app"
                 target="_blank"
+                rel="noreferrer"
                 className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
               >
                 View in GitHub
@@ -201,6 +204,7 @@ const Projects = () => {
                 ref={p2ButtonSecondRef}
                 href="https://react-todo-app-shohan.netlify.app"
                 target="_blank"
+                rel="noreferrer"
                 className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
               >
                 View Live Demo
@@ -246,6 +250,7 @@ const Projects = () => {
                 ref={p3ButtonFirstRef}
                 href="https://github.com/shohan-pherones/foodverse"
                 target="_blank"
+                rel="noreferrer"
                 className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
               >
                 View in GitHub
@@ -254,6 +259,7 @@ const Projects = () => {
                 ref={p3ButtonSecondRef}
                 href="https://food-verse.netlify.app"
                 target="_blank"
+                rel="noreferrer"
                 className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
               >
                 View Live Demo

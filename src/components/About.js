@@ -45,6 +45,7 @@ const About = () => {
           <a
             href="https://docs.google.com/document/d/1uYTvxmeNsx7CpkKPszWqjAMfJgt2bs6HSyzBVK06mZU/edit?usp=sharing"
             target="_blank"
+            rel="noreferrer"
             className="mt-10 inline-block py-10 px-20 border uppercase rounded-full border-white/20 hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
             View My Resume

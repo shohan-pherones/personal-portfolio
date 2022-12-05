@@ -18,6 +18,7 @@ const Socials = () => {
         ref={social1}
         href="https://www.facebook.com/spectra.shohan"
         target="_blank"
+        rel="noreferrer"
         className="hover:text-cyan-400 duration-500"
       >
         Facebook
@@ -26,6 +27,7 @@ const Socials = () => {
         ref={social2}
         href="https://www.instagram.com/spectra.shohan"
         target="_blank"
+        rel="noreferrer"
         className="hover:text-cyan-400 duration-500"
       >
         Instagram
@@ -34,6 +36,7 @@ const Socials = () => {
         ref={social3}
         href="https://twitter.com/elysianshohan"
         target="_blank"
+        rel="noreferrer"
         className="hover:text-cyan-400 duration-500"
       >
         Twitter
@@ -42,6 +45,7 @@ const Socials = () => {
         ref={social4}
         href="https://www.linkedin.com/in/shohan-pherones"
         target="_blank"
+        rel="noreferrer"
         className="hover:text-cyan-400 duration-500"
       >
         LinkedIn
@@ -50,6 +54,7 @@ const Socials = () => {
         ref={social5}
         href="https://github.com/shohan-pherones"
         target="_blank"
+        rel="noreferrer"
         className="hover:text-cyan-400 duration-500"
       >
         GitHub

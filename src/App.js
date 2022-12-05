@@ -16,15 +16,15 @@ import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
 
 const App = () => {
-  // Smooth scrolling
-  const lenis = new Lenis({
-    duration: 1.3,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    direction: "vertical",
-    smooth: true,
-  });
-
   useEffect(() => {
+    // Smooth scrolling
+    const lenis = new Lenis({
+      duration: 1.3,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: "vertical",
+      smooth: true,
+    });
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
