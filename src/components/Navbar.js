@@ -51,7 +51,7 @@ const Navbar = ({ text }) => {
         </li>
         <li ref={li6}>
           <a
-            href="https://docs.google.com/document/d/1uYTvxmeNsx7CpkKPszWqjAMfJgt2bs6HSyzBVK06mZU/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=share_link"
             target="_blank"
             rel="noreferrer"
             className="link"

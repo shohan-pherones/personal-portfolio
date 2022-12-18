@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { useGsapHeadline, useGsapStagger } from "../lib/gsap";
-
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 

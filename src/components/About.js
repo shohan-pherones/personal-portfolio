@@ -43,7 +43,7 @@ const About = () => {
             with joy.
           </p>
           <a
-            href="https://docs.google.com/document/d/1uYTvxmeNsx7CpkKPszWqjAMfJgt2bs6HSyzBVK06mZU/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=share_link"
             target="_blank"
             rel="noreferrer"
             className="mt-10 inline-block py-10 px-20 border uppercase rounded-full border-white/20 hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
