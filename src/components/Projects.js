@@ -8,11 +8,14 @@ import reactTodo1 from "../assets/images/react-todo-1.jpg";
 import reactTodo2 from "../assets/images/react-todo-2.jpg";
 import foodVerse1 from "../assets/images/foodverse-1.jpg";
 import foodVerse2 from "../assets/images/foodverse-2.jpg";
+import torqueXtreme1 from "../assets/images/torque-xtreme-1.jpg";
+import torqueXtreme2 from "../assets/images/torque-xtreme-2.jpg";
 
 const Projects = () => {
   const projectRightRefOne = useRef(null);
   const projectRightRefTwo = useRef(null);
   const projectRightRefThree = useRef(null);
+  const projectRightRefFour = useRef(null);
   const myProjects = useRef(null);
 
   const p1NumberRef = useRef(null);
@@ -38,6 +41,14 @@ const Projects = () => {
   const p3ToolsRef = useRef(null);
   const p3ButtonFirstRef = useRef(null);
   const p3ButtonSecondRef = useRef(null);
+
+  const p4NumberRef = useRef(null);
+  const p4TitleRef = useRef(null);
+  const p4ParaFirstRef = useRef(null);
+  const p4ParaSecondRef = useRef(null);
+  const p4ToolsRef = useRef(null);
+  const p4ButtonFirstRef = useRef(null);
+  const p4ButtonSecondRef = useRef(null);
 
   const p1Arr = [
     p1NumberRef,
@@ -69,13 +80,25 @@ const Projects = () => {
     p3ButtonSecondRef,
   ];
 
+  const p4Arr = [
+    p4NumberRef,
+    p4TitleRef,
+    p4ParaFirstRef,
+    p4ParaSecondRef,
+    p4ToolsRef,
+    p4ButtonFirstRef,
+    p4ButtonSecondRef,
+  ];
+
   useGsapHeadline(myProjects);
   useGsapRightIn(projectRightRefOne);
   useGsapRightIn(projectRightRefTwo);
   useGsapRightIn(projectRightRefThree);
+  useGsapRightIn(projectRightRefFour);
   useGsapStagger(p1Arr);
   useGsapStagger(p2Arr);
   useGsapStagger(p3Arr);
+  useGsapStagger(p4Arr);
 
   useEffect(() => {
     new hoverEffect({
@@ -103,6 +126,16 @@ const Projects = () => {
       intensity: 0.3,
       image1: foodVerse1,
       image2: foodVerse2,
+      displacementImage: cloud,
+    });
+  }, []);
+
+  useEffect(() => {
+    new hoverEffect({
+      parent: projectRightRefFour.current,
+      intensity: 0.3,
+      image1: torqueXtreme1,
+      image2: torqueXtreme2,
       displacementImage: cloud,
     });
   }, []);
@@ -269,6 +302,58 @@ const Projects = () => {
           <div
             className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
             ref={projectRightRefThree}
+          ></div>
+        </div>
+        <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20">
+          <div className="project-left xl:col-span-3 flex flex-col gap-10">
+            <span ref={p4NumberRef} className="text-9xl text-white/20">
+              04
+            </span>
+            <h3
+              ref={p4TitleRef}
+              className="uppercase text-5xl leading-relaxed text-cyan-400"
+            >
+              Torque Xtreme: A Car Repair Service Website
+            </h3>
+            <p ref={p4ParaFirstRef} className="text-white/75">
+              "Torque Xtreme" is a car repair service website, built using the
+              most demanded texhnologies like MongoDB, Express.js, React.js and
+              Node.js. The clean and modern UI is designed using Tailwind CSS.
+            </p>
+            <p ref={p4ParaSecondRef} className="text-white/75">
+              Users can register and login through email/password, google or
+              github account. Also can make order for a specific car repair
+              service, and also add/edit services. Lastly, user authorization
+              has been implemented using JWT in the server side.
+            </p>
+            <span ref={p4ToolsRef} className="text-cyan-400">
+              Tools: Node.js, Express.js, MongoDB, JWT, React.js, Firebase,
+              Tailwind CSS
+            </span>
+            <div className="flex gap-20">
+              <a
+                ref={p4ButtonFirstRef}
+                href="https://github.com/shohan-pherones/torque-xtreme"
+                target="_blank"
+                rel="noreferrer"
+                className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+              >
+                View in GitHub
+              </a>
+              <a
+                ref={p4ButtonSecondRef}
+                href="https://torque-xtreme.web.app"
+                target="_blank"
+                rel="noreferrer"
+                className="uppercase py-10 px-20 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+              >
+                View Live Demo
+              </a>
+            </div>
+          </div>
+          <div
+            className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
+            ref={projectRightRefFour}
           ></div>
         </div>
       </div>
