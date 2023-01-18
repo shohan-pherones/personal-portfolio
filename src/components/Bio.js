@@ -1,9 +1,7 @@
 import { useRef } from "react";
-import { useGsapDropping } from "../lib/gsap";
 
 const Bio = () => {
   const bioRef = useRef(null);
-  useGsapDropping(bioRef);
 
   return (
     <div className="bio mt-20 container mx-auto">

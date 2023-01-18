@@ -1,8 +1,7 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
-import { useGsapStagger, useGsapDropping } from "../lib/gsap";
+import { HashLink } from "react-router-hash-link";
 
-const Navbar = ({ text }) => {
+const Navbar = () => {
   const logoRef = useRef(null);
 
   const li1 = useRef(null);
@@ -11,43 +10,41 @@ const Navbar = ({ text }) => {
   const li4 = useRef(null);
   const li5 = useRef(null);
   const li6 = useRef(null);
-  const li7 = useRef(null);
 
-  const liArr = [li1, li2, li3, li4, li5, li6, li7];
-
-  useGsapStagger(liArr);
-  useGsapDropping(logoRef);
+  const liArr = [li1, li2, li3, li4, li5, li6];
 
   return (
     <nav className="flex justify-between container mx-auto mt-20 uppercase">
       <div className="logo">
-        <h2 ref={logoRef}>{text ? text : "Md. Shohanur Rahman"}</h2>
+        <HashLink smooth to="#home" ref={logoRef} className="link">
+          Md. Shohanur Rahman
+        </HashLink>
       </div>
       <ul className="links flex flex-col gap-3">
         <li ref={li1}>
-          <Link to="/" className="link">
+          <HashLink smooth to="#home" className="link">
             Home
-          </Link>
+          </HashLink>
         </li>
         <li ref={li2}>
-          <Link to="projects" className="link">
+          <HashLink smooth to="#projects" className="link">
             My Projects
-          </Link>
+          </HashLink>
         </li>
         <li ref={li3}>
-          <Link to="skills" className="link">
+          <HashLink smooth to="#skills" className="link">
             My Skills
-          </Link>
+          </HashLink>
         </li>
         <li ref={li4}>
-          <Link to="blogs" className="link">
-            Read Blogs
-          </Link>
+          <HashLink smooth to="#about" className="link">
+            About Me
+          </HashLink>
         </li>
         <li ref={li5}>
-          <Link to="about" className="link">
-            About Me
-          </Link>
+          <HashLink smooth to="#contact" className="link">
+            Contact Me
+          </HashLink>
         </li>
         <li ref={li6}>
           <a
@@ -56,13 +53,8 @@ const Navbar = ({ text }) => {
             rel="noreferrer"
             className="link"
           >
-            My Resume
+            View My Resume
           </a>
-        </li>
-        <li ref={li7}>
-          <Link to="contact" className="link">
-            Contact Me
-          </Link>
         </li>
       </ul>
     </nav>

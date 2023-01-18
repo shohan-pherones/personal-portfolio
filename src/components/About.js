@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import hoverEffect from "hover-effect";
-import { useGsapHeadline, useGsapLeftIn, useGsapRightIn } from "../lib/gsap";
 import cloud from "../assets/images/cloud.png";
 import aboutImage1 from "../assets/images/about-image-1.jpg";
 import aboutImage2 from "../assets/images/about-image-2.jpg";
@@ -9,10 +8,6 @@ const About = () => {
   const aboutLeftRef = useRef(null);
   const aboutMeRef = useRef(null);
   const aboutRightRef = useRef(null);
-
-  useGsapHeadline(aboutMeRef);
-  useGsapLeftIn(aboutLeftRef);
-  useGsapRightIn(aboutRightRef);
 
   useEffect(() => {
     new hoverEffect({
@@ -25,7 +20,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about container mx-auto mt-40">
+    <div className="about container mx-auto mt-40" id="about">
       <h2 className="section-title" ref={aboutMeRef}>
         About Me
       </h2>

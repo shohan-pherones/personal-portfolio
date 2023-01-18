@@ -1,7 +1,5 @@
 import { useRef } from "react";
-import { useGsapHeadline, useGsapStagger } from "../lib/gsap";
 import emailjs from "@emailjs/browser";
-import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const getInTouchRef = useRef(null);
@@ -12,12 +10,8 @@ const Contact = () => {
 
   const formItemArr = [formItem1, formItem2, formItem3, formItem4];
 
-  useGsapHeadline(getInTouchRef);
-  useGsapStagger(formItemArr);
-
   // Form submission
   const form = useRef();
-  const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,16 +25,16 @@ const Contact = () => {
       )
       .then(
         () => {
-          navigate("/successful");
+          console.log("Success");
         },
         () => {
-          navigate("/failed");
+          console.log("Failed");
         }
       );
   };
 
   return (
-    <div className="contact container mx-auto mt-40">
+    <div className="contact container mx-auto mt-40" id="contact">
       <h2 className="section-title" ref={getInTouchRef}>
         Get in touch
       </h2>

@@ -7,18 +7,16 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 
 const Home = () => {
-  const thankyouText = "Thanks for visiting my portfolio";
-
   return (
-    <>
+    <div id="home">
       <Hero />
       <Bio />
       <Projects />
       <Skills />
       <About />
       <Contact />
-      <Navbar text={thankyouText} />
-    </>
+      <Navbar />
+    </div>
   );
 };
 
