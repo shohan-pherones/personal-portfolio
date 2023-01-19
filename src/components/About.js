@@ -1,32 +1,22 @@
-import { useEffect, useRef } from "react";
-import hoverEffect from "hover-effect";
-import cloud from "../assets/images/cloud.png";
-import aboutImage1 from "../assets/images/about-image-1.jpg";
-import aboutImage2 from "../assets/images/about-image-2.jpg";
+import { useRef } from "react";
+import { useHoverEffect } from "../hooks/useHoverEffect";
+
+const data = {
+  img1: "https://i.ibb.co/gTpdWyt/about-image-2.jpg",
+  img2: "https://i.ibb.co/ZhNpqhK/about-image-1.jpg",
+};
 
 const About = () => {
   const aboutLeftRef = useRef(null);
-  const aboutMeRef = useRef(null);
-  const aboutRightRef = useRef(null);
 
-  useEffect(() => {
-    new hoverEffect({
-      parent: aboutLeftRef.current,
-      intensity: 0.3,
-      image1: aboutImage1,
-      image2: aboutImage2,
-      displacementImage: cloud,
-    });
-  }, []);
+  useHoverEffect(aboutLeftRef, data.img1, data.img2);
 
   return (
     <div className="about container mx-auto mt-40" id="about">
-      <h2 className="section-title" ref={aboutMeRef}>
-        About Me
-      </h2>
+      <h2 className="section-title">About Me</h2>
       <div className="about-wrapper mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div className="about-left" ref={aboutLeftRef}></div>
-        <div className="about-right" ref={aboutRightRef}>
+        <div className="about-right">
           <p>
             My name is Md. Shohanur Rahman and I’m a web developer. My expertise
             lays in website design and development, the world wide web,
