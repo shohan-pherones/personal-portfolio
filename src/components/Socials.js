@@ -1,61 +1,45 @@
-import { useRef } from "react";
+const data = [
+  {
+    id: 1,
+    title: "Facebook",
+    url: "https://www.facebook.com/spectra.shohan",
+  },
+  {
+    id: 2,
+    title: "Instagram",
+    url: "https://www.instagram.com/spectra.shohan",
+  },
+  {
+    id: 3,
+    title: "Twitter",
+    url: "https://twitter.com/elysianshohan",
+  },
+  {
+    id: 4,
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/shohan-pherones",
+  },
+  {
+    id: 5,
+    title: "GitHub",
+    url: "https://github.com/shohan-pherones",
+  },
+];
 
 const Socials = () => {
-  const social1 = useRef(null);
-  const social2 = useRef(null);
-  const social3 = useRef(null);
-  const social4 = useRef(null);
-  const social5 = useRef(null);
-
-  const socialArr = [social1, social2, social3, social4, social5];
-
   return (
     <div className="socials flex gap-5 uppercase text-sm fixed left-10 top-[75%] origin-left -rotate-90 text-white/30 bg-black/30 p-5 backdrop-blur-xl z-50">
-      <a
-        ref={social1}
-        href="https://www.facebook.com/spectra.shohan"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 duration-500"
-      >
-        Facebook
-      </a>
-      <a
-        ref={social2}
-        href="https://www.instagram.com/spectra.shohan"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 duration-500"
-      >
-        Instagram
-      </a>
-      <a
-        ref={social3}
-        href="https://twitter.com/elysianshohan"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 duration-500"
-      >
-        Twitter
-      </a>
-      <a
-        ref={social4}
-        href="https://www.linkedin.com/in/shohan-pherones"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 duration-500"
-      >
-        LinkedIn
-      </a>
-      <a
-        ref={social5}
-        href="https://github.com/shohan-pherones"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-cyan-400 duration-500"
-      >
-        GitHub
-      </a>
+      {data.map((social) => (
+        <a
+          key={social.id}
+          href={social.url}
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-cyan-400 duration-500"
+        >
+          {social.title}
+        </a>
+      ))}
     </div>
   );
 };

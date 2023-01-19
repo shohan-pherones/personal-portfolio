@@ -62,6 +62,7 @@ body {
   word-spacing: 3px;
 }
 
+/* custom cursor styles */
 .inner--cursor {
   position: fixed;
   left: 10px;
@@ -161,7 +162,7 @@ body {
   width: 1000px;
   border: 1px dashed var(--color-light);
   border-radius: 50%;
-  opacity: 0.3;
+  opacity: 0.2;
   position: fixed;
   z-index: -1000;
   animation: spin 90s linear infinite;

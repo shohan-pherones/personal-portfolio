@@ -1,14 +1,15 @@
-import { useRef } from "react";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
-  const footerRef = useRef(null);
-
   return (
     <footer className="my-40 text-center text-white/50">
-      <p ref={footerRef}>
+      <p>
         &copy; {new Date().getFullYear()}{" "}
-        <HashLink smooth to="#home" className="link">
+        <HashLink
+          smooth
+          to="#home"
+          className="link hover:text-white duration-500"
+        >
           Md. Shohanur Rahman
         </HashLink>
         . Crafted by yours truly

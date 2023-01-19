@@ -2,8 +2,8 @@ import { useRef } from "react";
 import { useHoverEffect } from "../hooks/useHoverEffect";
 
 const data = {
-  img1: "https://i.ibb.co/9rTkkQ5/hero-image-1.jpg",
-  img2: "https://i.ibb.co/CVbBPB9/hero-image-2.jpg",
+  img1: "https://images.pexels.com/photos/7736764/pexels-photo-7736764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  img2: "https://images.pexels.com/photos/3799361/pexels-photo-3799361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 };
 
 const Hero = () => {

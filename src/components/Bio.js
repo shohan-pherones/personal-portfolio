@@ -1,14 +1,11 @@
-import { useRef } from "react";
-
 const Bio = () => {
-  const bioRef = useRef(null);
-
   return (
     <div className="bio mt-20 container mx-auto">
-      <p ref={bioRef}>
-        Hi, I'm Md. Shohanur Rahman, and I'm your friendly neighbourhood
-        developer. Currently, I'm focused on building unique and interactive web
-        applications.
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+        adipisci iste fuga consequuntur quam repellat tempora. Nemo eligendi
+        iusto, dolorum eveniet quae perspiciatis tempora officia vero corrupti
+        vitae, ipsam in?
       </p>
     </div>
   );

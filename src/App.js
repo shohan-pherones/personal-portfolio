@@ -1,21 +1,21 @@
 import { useRef } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useSmoothScroll } from "./hooks/useSmoothScroll";
+import { useCustomCursor } from "./hooks/useCustomCursor";
 import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import Socials from "./components/Socials";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import { useSmoothScroll } from "./hooks/useSmoothScroll";
-import { useCustomCursor } from "./hooks/useCustomCursor";
 
 const App = () => {
   let innerCursor = useRef(null);
   let outerCursor = useRef(null);
 
-  // Smooth scrolling
+  // smooth scrolling
   useSmoothScroll();
 
-  // Custom cursor
+  // custom cursor
   useCustomCursor(innerCursor, outerCursor);
 
   return (
@@ -27,6 +27,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Navbar navInFooter />
       <Footer />
     </div>
   );
