@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   // form submission
@@ -17,17 +18,40 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("success");
+          toast.success("Your message sent!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         },
         () => {
-          console.log("failed");
+          toast.error("Failed, please try again later!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
       );
+
+    // reset values
+    e.target.querySelector(".fullname").value = "";
+    e.target.querySelector(".email").value = "";
+    e.target.querySelector(".message").value = "";
   };
 
   return (
     <div className="contact container mx-auto mt-40" id="contact">
-      <h2 className="section-title">Let's talk</h2>
+      <h2 className="section-title">Let's Talk</h2>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -38,14 +62,14 @@ const Contact = () => {
           placeholder="Write your name"
           name="fullname"
           required
-          className="bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500"
+          className="fullname bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500"
         />
         <input
           type="email"
           placeholder="Write your email"
           name="email"
           required
-          className="bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500"
+          className="email bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500"
         />
         <textarea
           cols="30"
@@ -53,7 +77,7 @@ const Contact = () => {
           placeholder="Write your message"
           name="message"
           required
-          className="bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 resize-none"
+          className="message bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 resize-none"
         />
         <input
           type="submit"

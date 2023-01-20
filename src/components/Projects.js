@@ -3,11 +3,11 @@ import Project from "./Project";
 const data = [
   {
     id: 1,
-    title: "Torque Xtreme: A Car Repair Service Website",
+    title: "Torque Xtreme — A car repair service",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-1_o6y8dx.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-2_qumvkp.jpg",
     description:
-      "Users can register and login through email/password, google or github account. Also can make order for a specific car repair service, and also add/edit services. Lastly, user authorization has been implemented using JWT in the server side.",
+      "Users can register and login through email/password, google or github account. Users can make order for a specific car repair service as well as add/edit services. User authorization has been implemented using JWT on the server side",
     tools: [
       "Node.js",
       "Express.js",
@@ -23,23 +23,20 @@ const data = [
   },
   {
     id: 2,
-    title: "Torque Xtreme: A Car Repair Service Website",
+    title: "React Shopping — An electronics store",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-1_lwzolq.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-2_ikp0h4.jpg",
     description:
-      "Users can register and login through email/password, google or github account. Also can make order for a specific car repair service, and also add/edit services. Lastly, user authorization has been implemented using JWT in the server side.",
+      "Shopping cart functionality has been implemented using Redux Toolkit. All the product data has been served via JSON server and fetched using RTK Query. Cart items also saved into the local storage of the client’s browser",
     tools: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
       "React.js",
-      "Firebase",
+      "Redux.js",
+      "Redux Toolkit",
+      "RTK Query",
       "Tailwind CSS",
     ],
-    liveLink: "https://torque-xtreme.web.app",
-    frontEndLink: "https://github.com/shohan-pherones/torque-xtreme",
-    backEndLink: "https://github.com/shohan-pherones/torque-xtreme-server",
+    liveLink: "https://react-shopping-shohan.netlify.app",
+    frontEndLink: "https://github.com/shohan-pherones/react-shopping-client",
   },
 ];
 

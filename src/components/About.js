@@ -18,19 +18,29 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-            consectetur quod quaerat cum itaque quae autem dolores eum nobis
-            aperiam! Facere nisi doloribus inventore eveniet ut beatae
-            perferendis alias quasi.
+            I am a MERN stack developer with a strong focus on React, Redux, and
+            Tailwind CSS. I specialize in building responsive and user-friendly
+            web applications that provide a seamless experience for the
+            end-user. With my in-depth knowledge of the latest web development
+            technologies and frameworks, I am able to create innovative
+            solutions that meet the needs of my clients. Whether it's a simple
+            website or a complex web application, I am committed to delivering
+            high-quality work that exceeds expectations.
           </p>
           <p className="mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            tempore, ullam deserunt a repellendus quam quod totam corporis
-            reprehenderit deleniti illum distinctio iusto exercitationem libero
-            quo impedit fugiat quisquam veniam.
+            In addition to my expertise in the MERN stack, I also have a strong
+            background in UI design and animation. I am skilled in using the
+            GreenSock Animation Platform (GSAP) library to create dynamic and
+            engaging user interfaces. I have experience in creating smooth
+            animations and transitions that enhance the overall user experience.
+            I am also well-versed in using other design tools such as Adobe XD
+            and Figma to create wireframes and mockups. My ability to combine my
+            technical skills with my artistic eye allows me to create visually
+            appealing and functional web applications that stand out in the
+            market.
           </p>
           <a
-            href="https://www.google.com"
+            href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="mt-10 inline-block py-8 px-14 border uppercase rounded-full border-white/20 hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"

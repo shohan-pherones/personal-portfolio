@@ -9,7 +9,7 @@ const Navbar = ({ navInFooter }) => {
     >
       <div className="logo">
         <HashLink smooth to="#home" className="link">
-          {navInFooter ? "Go to top" : "Sunerah Binte Ayesha"}
+          {navInFooter ? "Go to top" : "Md. Shohanur Rahman"}
         </HashLink>
       </div>
       <ul className="links flex flex-col gap-3">
@@ -40,7 +40,7 @@ const Navbar = ({ navInFooter }) => {
         </li>
         <li>
           <a
-            href="https://www.google.com"
+            href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="link"

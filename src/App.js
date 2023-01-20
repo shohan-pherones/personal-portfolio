@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useSmoothScroll } from "./hooks/useSmoothScroll";
 import { useCustomCursor } from "./hooks/useCustomCursor";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import Socials from "./components/Socials";
@@ -20,6 +22,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <ToastContainer />
       <div className="noise"></div>
       <CustomCursor innerCursor={innerCursor} outerCursor={outerCursor} />
       <Navbar />
