@@ -4,8 +4,8 @@ const data = [
   {
     id: 1,
     title: "Torque Xtreme: A Car Repair Service Website",
-    img1: "https://images.pexels.com/photos/14910936/pexels-photo-14910936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    img2: "https://images.pexels.com/photos/10879155/pexels-photo-10879155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-1_o6y8dx.jpg",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-2_qumvkp.jpg",
     description:
       "Users can register and login through email/password, google or github account. Also can make order for a specific car repair service, and also add/edit services. Lastly, user authorization has been implemented using JWT in the server side.",
     tools: [
@@ -24,8 +24,8 @@ const data = [
   {
     id: 2,
     title: "Torque Xtreme: A Car Repair Service Website",
-    img1: "https://images.pexels.com/photos/14910936/pexels-photo-14910936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    img2: "https://images.pexels.com/photos/10879155/pexels-photo-10879155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-1_lwzolq.jpg",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-2_ikp0h4.jpg",
     description:
       "Users can register and login through email/password, google or github account. Also can make order for a specific car repair service, and also add/edit services. Lastly, user authorization has been implemented using JWT in the server side.",
     tools: [
