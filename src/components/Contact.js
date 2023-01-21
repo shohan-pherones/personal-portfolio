@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { useSectionTitleReveal } from "../hooks/gsap";
 
 const Contact = () => {
   // form submission
@@ -49,9 +50,17 @@ const Contact = () => {
     e.target.querySelector(".message").value = "";
   };
 
+  const contactTitleRef = useRef(null);
+
+  useSectionTitleReveal(contactTitleRef);
+
   return (
     <div className="contact container mx-auto mt-40" id="contact">
-      <h2 className="section-title">Let's Talk</h2>
+      <div className="overflow-hidden">
+        <h2 className="section-title" ref={contactTitleRef}>
+          Let's Talk
+        </h2>
+      </div>
       <form
         ref={form}
         onSubmit={sendEmail}

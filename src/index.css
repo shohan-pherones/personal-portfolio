@@ -137,8 +137,7 @@ body {
   position: relative;
 }
 
-.hero-headline-1,
-.hero-headline-2 {
+.shutter {
   position: absolute;
   z-index: 10;
   font-family: "Cosi Azure", sans-serif;
@@ -146,12 +145,12 @@ body {
   text-transform: uppercase;
 }
 
-.hero-headline-1 {
+.shutter-l {
   top: 0;
   left: 0;
 }
 
-.hero-headline-2 {
+.shutter-r {
   bottom: 0;
   right: 0;
 }
@@ -218,8 +217,13 @@ body {
 }
 
 .skill-item::before {
-  width: 100%;
+  width: 0%;
   opacity: 0.2;
+  transition: 1.5s;
+}
+
+.skill-item.reveal::before {
+  width: 100%;
 }
 
 .skill-item::after {

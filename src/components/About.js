@@ -1,5 +1,9 @@
 import { useRef } from "react";
 import { useHoverEffect } from "../hooks/useHoverEffect";
+import {
+  useSectionTitleReveal,
+  useProjectLeftRightReaveal,
+} from "../hooks/gsap";
 
 const data = {
   img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674222467/Personal%20Portfolio/about-2_ps72st.jpg",
@@ -8,15 +12,25 @@ const data = {
 
 const About = () => {
   const aboutLeftRef = useRef(null);
+  const aboutRightRef = useRef(null);
+  const aboutTitleRef = useRef(null);
+
+  const aboutSides = [aboutLeftRef, aboutRightRef];
 
   useHoverEffect(aboutLeftRef, data.img1, data.img2);
+  useSectionTitleReveal(aboutTitleRef);
+  useProjectLeftRightReaveal(aboutSides);
 
   return (
     <div className="about container mx-auto mt-40" id="about">
-      <h2 className="section-title">About Me</h2>
-      <div className="about-wrapper mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div className="overflow-hidden">
+        <h2 className="section-title" ref={aboutTitleRef}>
+          About Me
+        </h2>
+      </div>
+      <div className="about-wrapper mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20 overflow-hidden">
         <div className="about-left" ref={aboutLeftRef}></div>
-        <div className="about-right">
+        <div className="about-right" ref={aboutRightRef}>
           <p>
             I am a MERN stack developer with a strong focus on React, Redux, and
             Tailwind CSS. I specialize in building responsive and user-friendly

@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import Project from "./Project";
+import { useSectionTitleReveal } from "../hooks/gsap";
 
 const data = [
   {
@@ -41,9 +43,17 @@ const data = [
 ];
 
 const Projects = () => {
+  const projectTitleRef = useRef(null);
+
+  useSectionTitleReveal(projectTitleRef);
+
   return (
     <div className="projects container mx-auto mt-40" id="projects">
-      <h2 className="section-title">My Projects</h2>
+      <div className="overflow-hidden">
+        <h2 className="section-title" ref={projectTitleRef}>
+          My Projects
+        </h2>
+      </div>
       <div className="projects-wrapper mt-40 flex flex-col gap-40">
         {data.map((project) => (
           <Project key={project.id} project={project} />

@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import { useSocialBoxReveal } from "../hooks/gsap";
+
 const data = [
   {
     id: 1,
@@ -27,8 +30,15 @@ const data = [
 ];
 
 const Socials = () => {
+  const socialBoxRef = useRef(null);
+
+  useSocialBoxReveal(socialBoxRef, 2.5);
+
   return (
-    <div className="socials flex gap-5 uppercase text-sm fixed left-10 top-[75%] origin-left -rotate-90 text-white/30 bg-black/30 p-5 backdrop-blur-xl z-50">
+    <div
+      className="socials flex gap-5 uppercase text-sm fixed left-10 top-[75%] origin-left -rotate-90 text-white/30 bg-black/30 p-5 backdrop-blur-xl z-50"
+      ref={socialBoxRef}
+    >
       {data.map((social) => (
         <a
           key={social.id}
