@@ -77,6 +77,12 @@ body {
   transition: width 0.5s, height 0.5s;
 }
 
+.inner--cursor.grow {
+  width: 25px;
+  height: 25px;
+  transition: width 0.5s, height 0.5s;
+}
+
 .outer--cursor {
   position: fixed;
   left: 10px;
