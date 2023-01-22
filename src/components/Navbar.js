@@ -21,7 +21,7 @@ const Navbar = ({ navInFooter }) => {
     link7Ref,
   ];
 
-  useLinkRaster(links, 2.5);
+  useLinkRaster(links, 2);
 
   return (
     <nav

@@ -56,6 +56,9 @@ export const useLinkRaster = (items, delay = 0) => {
         delay: delay,
         ease: "power4.out",
         stagger: 0.2,
+        scrollTrigger: {
+          trigger: el,
+        },
       }
     );
   }, [items, delay]);
@@ -198,4 +201,29 @@ export const useFooterReveal = (el, delay = 0) => {
       }
     );
   }, [el, delay]);
+};
+
+export const useInputsReaveal = (items, delay = 0) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+
+    gsap.fromTo(
+      el,
+      {
+        y: 200,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        delay: delay,
+        ease: "power4.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [items, delay]);
 };
