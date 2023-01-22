@@ -188,7 +188,7 @@ export const useFooterReveal = (el, delay = 0) => {
     gsap.fromTo(
       el.current,
       {
-        y: 100,
+        y: -100,
       },
       {
         y: 0,
