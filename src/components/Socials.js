@@ -27,6 +27,11 @@ const data = [
     title: "GitHub",
     url: "https://github.com/shohan-pherones",
   },
+  {
+    id: 6,
+    title: "Leetcode",
+    url: "https://leetcode.com/spectrashohan",
+  },
 ];
 
 const Socials = () => {
