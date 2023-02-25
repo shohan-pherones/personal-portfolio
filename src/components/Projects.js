@@ -5,6 +5,25 @@ import { useSectionTitleReveal } from "../hooks/gsap";
 const data = [
   {
     id: 1,
+    title: "Orbit Council — A powerful project management app",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1677308467/Personal%20Portfolio/o-c-1_m8oyn3.jpg",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1677308467/Personal%20Portfolio/o-c-2_wvneli.jpg",
+    description:
+      "With Orbit Council, users can create, update, and delete their own projects with ease. The app is highly secure, featuring robust JWT authentication and frontend route protection. In addition, the app boasts a sleek and intuitive user interface, built using Tailwind CSS.",
+    tools: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "React.js",
+      "Tailwind CSS",
+    ],
+    liveLink: "https://orbit-council.netlify.app",
+    frontEndLink: "https://github.com/shohan-pherones/orbit-council-client",
+    backEndLink: "https://github.com/shohan-pherones/orbit-council-server",
+  },
+  {
+    id: 2,
     title: "Torque Xtreme — A car repair service",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-1_o6y8dx.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-2_qumvkp.jpg",
@@ -24,7 +43,7 @@ const data = [
     backEndLink: "https://github.com/shohan-pherones/torque-xtreme-server",
   },
   {
-    id: 2,
+    id: 3,
     title: "React Shopping — An electronics store",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-1_lwzolq.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-2_ikp0h4.jpg",
