@@ -32,43 +32,67 @@ const data = [
   },
   {
     id: 7,
-    skill: "GSAP",
-  },
-  {
-    id: 8,
     skill: "React.js",
   },
   {
-    id: 9,
+    id: 8,
     skill: "React Router",
   },
   {
-    id: 10,
-    skill: "Axios",
-  },
-  {
-    id: 11,
+    id: 9,
     skill: "Redux.js",
   },
   {
-    id: 12,
+    id: 10,
     skill: "Redux Toolkit",
   },
   {
+    id: 11,
+    skill: "Axios",
+  },
+  {
+    id: 12,
+    skill: "SWR",
+  },
+  {
     id: 13,
-    skill: "Firebase",
+    skill: "GSAP",
   },
   {
     id: 14,
-    skill: "Node.js",
+    skill: "Firebase",
   },
   {
     id: 15,
-    skill: "Express.js",
+    skill: "TypeScript",
   },
   {
     id: 16,
+    skill: "Next.js",
+  },
+  {
+    id: 17,
+    skill: "Node.js",
+  },
+  {
+    id: 18,
+    skill: "Express.js",
+  },
+  {
+    id: 19,
     skill: "MongoDB",
+  },
+  {
+    id: 20,
+    skill: "Mongoose",
+  },
+  {
+    id: 21,
+    skill: "Prisma",
+  },
+  {
+    id: 22,
+    skill: "JWT",
   },
 ];
 

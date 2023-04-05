@@ -5,17 +5,41 @@ import { useSectionTitleReveal } from "../hooks/gsap";
 const data = [
   {
     id: 1,
+    title: "Raptor Media — A full-stack social media app",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680727532/Personal%20Portfolio/raptor-1_k9oijt.png",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680727532/Personal%20Portfolio/raptor-2_uhmfwo.png",
+    description:
+      "Introducing the ultimate Raptor Media platform built with the latest and greatest technologies! I have used Next.js, Prisma, Tailwind CSS, and NextAuth with TypeScript to create a powerful and modern social media platform that's sure to impress.",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "MongoDB",
+      "NextAuth",
+      "React.js",
+      "Zustand",
+      "Axios",
+      "SWR",
+      "Tailwind CSS",
+    ],
+    liveLink: "https://raptor-media.vercel.app",
+    sourceCodeLink: "https://github.com/shohan-pherones/raptor-media",
+  },
+  {
+    id: 2,
     title: "Orbit Council — A powerful project management app",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1677308467/Personal%20Portfolio/o-c-1_m8oyn3.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1677308467/Personal%20Portfolio/o-c-2_wvneli.jpg",
     description:
-      "With Orbit Council, users can create, update, and delete their own projects with ease. The app is highly secure, featuring robust JWT authentication and frontend route protection. In addition, the app boasts a sleek and intuitive user interface, built using Tailwind CSS.",
+      "Orbit Council is a powerful project management app built using the MERN stack. With Orbit Council, users can create, update, and delete their own projects with ease. The app is highly secure, featuring robust JWT authentication and frontend route protection.",
     tools: [
       "Node.js",
       "Express.js",
       "MongoDB",
+      "Mongoose",
       "JWT",
       "React.js",
+      "Context API",
       "Tailwind CSS",
     ],
     liveLink: "https://orbit-council.netlify.app",
@@ -23,12 +47,12 @@ const data = [
     backEndLink: "https://github.com/shohan-pherones/orbit-council-server",
   },
   {
-    id: 2,
+    id: 3,
     title: "Torque Xtreme — A car repair service",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-1_o6y8dx.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-2_qumvkp.jpg",
     description:
-      "Users can register and login through email/password, google or github account. Users can make order for a specific car repair service as well as add/edit services. User authorization has been implemented using JWT on the server side",
+      "Xtreme Torque is a state-of-the-art car repair website that provides a hassle-free experience for customers to order services from the comfort of their homes. The website is built using the MERN (MongoDB, Express, React, and Node.js) stack, ensuring fast and responsive performance.",
     tools: [
       "Node.js",
       "Express.js",
@@ -43,21 +67,22 @@ const data = [
     backEndLink: "https://github.com/shohan-pherones/torque-xtreme-server",
   },
   {
-    id: 3,
-    title: "React Shopping — An electronics store",
-    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-1_lwzolq.jpg",
-    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/react-shopping-2_ikp0h4.jpg",
+    id: 4,
+    title: "Self-Played Snake Game with Genetic Algorithm and Neural Network",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680728036/Personal%20Portfolio/snake-1_ldtqbp.png",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680728035/Personal%20Portfolio/snake-2_bc4tnl.png",
     description:
-      "Shopping cart functionality has been implemented using Redux Toolkit. All the product data has been served via JSON server and fetched using RTK Query. Cart items also saved into the local storage of the client’s browser",
+      "This is a self-played snake game that uses genetic algorithm and neural network to learn and improve its gameplay over time. The game is built using the p5.js library for graphics and user interface, and the tensorflow.js and neataptic libraries for machine learning.",
     tools: [
-      "React.js",
-      "Redux.js",
-      "Redux Toolkit",
-      "RTK Query",
-      "Tailwind CSS",
+      "p5.js",
+      "TensorFlow.js",
+      "Neataptic",
+      "Genetic Algorithm",
+      "Neural Network",
+      "JavaScript",
     ],
-    liveLink: "https://react-shopping-shohan.netlify.app",
-    frontEndLink: "https://github.com/shohan-pherones/react-shopping-client",
+    liveLink: "https://snake-game-self-played.netlify.app",
+    sourceCodeLink: "https://github.com/shohan-pherones/snake-game-self-played",
   },
 ];
 

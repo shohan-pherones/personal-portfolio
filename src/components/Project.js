@@ -39,12 +39,12 @@ const Project = ({ project }) => {
             Live Site
           </a>
           <a
-            href={project.frontEndLink}
+            href={project.frontEndLink || project.sourceCodeLink}
             target="_blank"
             rel="noreferrer"
             className="uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
-            Front-End Code
+            {project.frontEndLink ? "Front-End Code" : "Source Code"}
           </a>
           {project.backEndLink && (
             <a

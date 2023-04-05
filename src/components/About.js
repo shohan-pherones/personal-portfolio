@@ -32,26 +32,26 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right" ref={aboutRightRef}>
           <p>
-            I am a MERN stack developer with a strong focus on React, Redux, and
-            Tailwind CSS. I specialize in building responsive and user-friendly
+            As a MERN stack developer, I specialize in React, Redux, and
+            Tailwind CSS. My focus is on building responsive and user-friendly
             web applications that provide a seamless experience for the
-            end-user. With my in-depth knowledge of the latest web development
-            technologies and frameworks, I am able to create innovative
-            solutions that meet the needs of my clients. Whether it's a simple
-            website or a complex web application, I am committed to delivering
-            high-quality work that exceeds expectations.
+            end-user. With my extensive knowledge of the latest web development
+            technologies and frameworks, such as Next.js, Prisma, and
+            TypeScript, I create innovative solutions that meet the unique needs
+            of my clients. From simple websites to complex web applications, I
+            am committed to delivering high-quality work that exceeds
+            expectations.
           </p>
           <p className="mt-10">
-            In addition to my expertise in the MERN stack, I also have a strong
-            background in UI design and animation. I am skilled in using the
+            Apart from my expertise in the MERN stack, I have a strong
+            background in UI design and animation. I am proficient in using the
             GreenSock Animation Platform (GSAP) library to create dynamic and
-            engaging user interfaces. I have experience in creating smooth
-            animations and transitions that enhance the overall user experience.
-            I am also well-versed in using other design tools such as Adobe XD
-            and Figma to create wireframes and mockups. My ability to combine my
-            technical skills with my artistic eye allows me to create visually
-            appealing and functional web applications that stand out in the
-            market.
+            engaging user interfaces. My skills in creating smooth animations
+            and transitions enhance the overall user experience. Additionally, I
+            am well-versed in using other design tools, such as Figma, to create
+            wireframes and mockups. Combining my technical skills with my
+            artistic eye, I develop visually appealing and functional web
+            applications that stand out in the market.
           </p>
           <a
             href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=sharing"

@@ -9,11 +9,11 @@ const Bio = () => {
   return (
     <div className="bio mt-20 container mx-auto overflow-hidden">
       <p ref={bioRef}>
-        I am a MERN stack developer specialized in building responsive web
-        applications using React, Redux, Tailwind CSS and GSAP. My expertise in
-        UI design and animation allows me to create visually appealing and
-        functional solutions. I am dedicated to delivering high-quality work and
-        staying up-to-date with the latest web development trends.
+        Hi, I'm Shohan - a passionate MERN stack developer with a love for
+        modern, scalable web applications. With expertise in MongoDB, Express,
+        React, and Node.js, I thrive in collaborative environments and enjoy
+        tackling new challenges. When I'm not coding, I enjoy outdoor activities
+        and engaging in my favorite hobbies.
       </p>
     </div>
   );
