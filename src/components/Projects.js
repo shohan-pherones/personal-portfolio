@@ -6,8 +6,8 @@ const data = [
   {
     id: 1,
     title: "Raptor Media — A full-stack social media app",
-    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680727532/Personal%20Portfolio/raptor-1_k9oijt.png",
-    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680727532/Personal%20Portfolio/raptor-2_uhmfwo.png",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/raptor-1_gfkcnt.jpg",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/raptor-2_d5hclv.jpg",
     description:
       "Introducing the ultimate Raptor Media platform built with the latest and greatest technologies! I have used Next.js, Prisma, Tailwind CSS, and NextAuth with TypeScript to create a powerful and modern social media platform that's sure to impress.",
     tools: [
@@ -69,8 +69,8 @@ const data = [
   {
     id: 4,
     title: "Self-Played Snake Game with Genetic Algorithm and Neural Network",
-    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680728036/Personal%20Portfolio/snake-1_ldtqbp.png",
-    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680728035/Personal%20Portfolio/snake-2_bc4tnl.png",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/snake-1_veumf9.jpg",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/snake-2_rkxatt.jpg",
     description:
       "This is a self-played snake game that uses genetic algorithm and neural network to learn and improve its gameplay over time. The game is built using the p5.js library for graphics and user interface, and the tensorflow.js and neataptic libraries for machine learning.",
     tools: [
