@@ -5,6 +5,26 @@ import { useSectionTitleReveal } from "../hooks/gsap";
 const data = [
   {
     id: 1,
+    title:
+      "Euphoria E-commerce Website Built with Next.js: Redefining Online Shopping",
+    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1681647025/Personal%20Portfolio/euphoria-1_pyu27o.jpg",
+    img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1681647024/Personal%20Portfolio/euphoria-2_pwsyj3.jpg",
+    description:
+      "Welcome to Euphoria E-commerce, your one-stop destination for all your online shopping needs. Our platform is built on a powerful technology stack, including Next.js, React, Prisma, Tailwind, Redux Toolkit, and Stripe, to deliver a seamless shopping experience.",
+    tools: [
+      "Next.js",
+      "Prisma",
+      "MongoDB",
+      "Stripe",
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+    ],
+    liveLink: "https://euphoria-ecommerce.vercel.app",
+    sourceCodeLink: "https://github.com/shohan-pherones/euphoria-ecommerce",
+  },
+  {
+    id: 2,
     title: "Raptor Media — A full-stack social media app",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/raptor-1_gfkcnt.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/raptor-2_d5hclv.jpg",
@@ -26,7 +46,7 @@ const data = [
     sourceCodeLink: "https://github.com/shohan-pherones/raptor-media",
   },
   {
-    id: 2,
+    id: 3,
     title: "Orbit Council — A powerful project management app",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1677308467/Personal%20Portfolio/o-c-1_m8oyn3.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1677308467/Personal%20Portfolio/o-c-2_wvneli.jpg",
@@ -47,7 +67,7 @@ const data = [
     backEndLink: "https://github.com/shohan-pherones/orbit-council-server",
   },
   {
-    id: 3,
+    id: 4,
     title: "Torque Xtreme — A car repair service",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-1_o6y8dx.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1674231025/Personal%20Portfolio/torque-xtreme-2_qumvkp.jpg",
@@ -67,7 +87,7 @@ const data = [
     backEndLink: "https://github.com/shohan-pherones/torque-xtreme-server",
   },
   {
-    id: 4,
+    id: 5,
     title: "Self-Played Snake Game with Genetic Algorithm and Neural Network",
     img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/snake-1_veumf9.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1680934541/Personal%20Portfolio/snake-2_rkxatt.jpg",
