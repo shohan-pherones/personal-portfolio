@@ -54,7 +54,7 @@ const About = () => {
             applications that stand out in the market.
           </p>
           <a
-            href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1SWpuImu9yj-z4j9zI_7FrdVyYbhMBy8NdW_voI7a5V4/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="mt-10 inline-block py-8 px-14 border uppercase rounded-full border-white/20 hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"

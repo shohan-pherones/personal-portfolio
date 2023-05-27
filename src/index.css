@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -55,7 +55,7 @@ html {
 body {
   background-color: var(--color-dark);
   color: var(--color-light);
-  font-family: "Michroma", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6;
   letter-spacing: 2px;

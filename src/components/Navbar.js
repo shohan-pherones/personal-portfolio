@@ -62,7 +62,7 @@ const Navbar = ({ navInFooter }) => {
         </li>
         <li>
           <a
-            href="https://docs.google.com/document/d/1heAA15qIMAcIEHGPKMR1ZsyvuFdb7oG0MXFzkz46DQU/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1SWpuImu9yj-z4j9zI_7FrdVyYbhMBy8NdW_voI7a5V4/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="link"
