@@ -56,10 +56,8 @@ body {
   background-color: var(--color-dark);
   color: var(--color-light);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6;
-  letter-spacing: 2px;
-  word-spacing: 3px;
 }
 
 /* custom cursor styles */
@@ -78,8 +76,8 @@ body {
 }
 
 .inner--cursor.grow {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   transition: width 0.5s, height 0.5s;
 }
 
@@ -87,8 +85,8 @@ body {
   position: fixed;
   left: 10px;
   z-index: 9000;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   transform: translate(-50%, -50%);
   border: 1px solid var(--color-light);
   mix-blend-mode: difference;
@@ -111,7 +109,7 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: -1500;
-  opacity: 0.07;
+  opacity: 0.06;
 }
 
 .link {

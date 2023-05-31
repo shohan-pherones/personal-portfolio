@@ -41,7 +41,7 @@ const Socials = () => {
 
   return (
     <div
-      className="socials flex gap-5 uppercase text-sm fixed left-10 top-[75%] origin-left -rotate-90 text-white/30 bg-black/30 p-5 backdrop-blur-xl z-50"
+      className="socials flex gap-5 uppercase text-lg fixed left-10 top-[75%] origin-left -rotate-90 text-white/30 bg-black/30 p-5 backdrop-blur-xl z-50"
       ref={socialBoxRef}
     >
       {data.map((social) => (
