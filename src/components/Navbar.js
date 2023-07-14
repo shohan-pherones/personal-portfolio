@@ -62,13 +62,13 @@ const Navbar = ({ navInFooter }) => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/10XXgnyx2UmI7oeL5o3VPn1eD0nHsmJpw/view?usp=sharing"
+            href="https://drive.google.com/uc?export=download&id=1RUSbAhqLqUQH3eLY6ni-h4u8uxKlfxxO"
             target="_blank"
             rel="noreferrer"
             className="link"
             ref={link7Ref}
           >
-            View My Resume
+            Download My Resume
           </a>
         </li>
       </ul>
